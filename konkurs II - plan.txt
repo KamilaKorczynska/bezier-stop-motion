@@ -1,0 +1,55 @@
+konkurs II
+
+
+prezentować bez włączonej grafiki w tle
+
+aplikacja:
+1. obliczanie punktów na krzywej Beziera		Python - numpy
+2. rysowanie						Python - matplotlib
+3. interfejs						Python - customtkinter
+
+
+
+1. alg do obliczania punktów na krzywej Beziera  
+- "Linear-time geometric algorithm for evaluating Bezier curves" - Paweł Woźny, Filip Chudy
+
+2. Opcje rysowania:
+- Dodaj / Usuń punkt / Przesuń punkt
+- Dodaj / Usuń / Przesuń krzywą
+- Dodawanie i usuwanie klatki
+- Zmiana grubości krzywej
+- Zmiana koloru danej krzywej i tła każdej klatki (jednocześnie, planowane było przypisanie tła do klatki)
+
+3. Opcje interfejsu
+- Nowy projekt
+- Zapisz (i przy wychodzeniu)
+- Eksportuj klatki
+- Eksportuj jako gif
+- Undo, Redo (Nie zaimplementowane)
+- Wgrywanie grafiki w tło + checkbox 'pokaż grafikę' (gdy grafika włączona o wiele bardziej laguje)
+- Wybór krzywej do edycji
+- Wybór klatki do edycji
+(+) Poprzednia klatka widoczna minimalnie w tle + checkbox 'poprzednia klatka' (gdy grafika włączona o wiele bardziej laguje)
+
+
+
+TO DO
+- błąd/warning przy zamykaniu się okien - rozwiązać
+- poukładać bardziej kod i spritey do folderu itd.
+- przypisanie koloru klatki (tła) do klatki
+- "Nowy Projekt" poprawić żeby działało otwieranie istniejącego(teraz trzeba owtorzyć folder projektu?) i tworzenie
+- poprawić przesuwanie krzywych
+- poprawić grafikę w tle, żeby tak nie lagowało (bo jest ciągle od początku rysowana)
+- Undo i Redo - historia
+- dodać wagi (numerki na punktach kontrolnych = wagi, w alg omega)
+- grafiki klatek na przyciskach (i może krzywych na liście krzywych)
+- więcej opcji grubości
+- grubości w programie odwziercieglające grubość jaka będzie na png
+- walnąć do .exe
+- dodać opcję ładnego łączenia krzywych (dwa wierzchołki krzywej są złączone (nie są jedną krzywą) gładko + może trzymają się jak przesuwane)
+- dodać opcję podzielenia krzywej na części (jak jakiś element krzywej wyjdzie ładnie to odciąć resztę)
+- dodać opcję kopiowania krzywych i klatek
+- dodać opcję zmieniania kolejności klatek i krzywych
+- zmienić ilość punktów dodatkowych (tworzących gładkość krzywej), zamiast z góry zakładać że każda krzywa ma 1000 takich punktów - to dostosowywać do jej długości (Ilości punktów kontrolnych)
+- wrzucić na GitHuba i dodać READ ME (np. info że to alg Woźnego i Chudego)
+- transformacje - tworzenie 1/2 klatek pomiędzy klatkami stworzonymi przez użytkownika
