@@ -197,6 +197,9 @@ canvas_width = None
 canvas_height = None
 is_new = True
 
+def get_icon(name):
+    return os.path.join(os.path.dirname(__file__), "icons", name)
+
 def setup_main_interface(project_path):
     global frames, canvas_width, canvas_height, is_new
 
@@ -238,8 +241,8 @@ def setup_main_interface(project_path):
     tool_frame.pack(pady=5, side="top",  fill="x")
 
     # Wczytanie obrazów strzałek przy użyciu PIL
-    undo_image_pil = Image.open("left.png")  # Ścieżka do obrazu "undo"
-    redo_image_pil = Image.open("right.png")  # Ścieżka do obrazu "redo"
+    undo_image_pil = Image.open(get_icon("left.png"))  # Ścieżka do obrazu "undo"
+    redo_image_pil = Image.open(get_icon("right.png"))  # Ścieżka do obrazu "redo"
 
     # Utworzenie CTkImage z obrazów PIL
     undo_image = ctk.CTkImage(light_image=undo_image_pil, dark_image=undo_image_pil, size=(24, 24))
