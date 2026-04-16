@@ -10,7 +10,7 @@ aplikacja:
 
 
 
-1. alg do obliczania punktów na krzywej Beziera  
+1. alg do obliczania punktów na krzywej Beziera
 - "Linear-time geometric algorithm for evaluating Bezier curves" - Paweł Woźny, Filip Chudy
 
 2. Opcje rysowania:
